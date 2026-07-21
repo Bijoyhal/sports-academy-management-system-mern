@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import Table from '../dashboard/table'
+import Table from '../dashboard/Table'
 import Header from '../dashboard/Header'
 import { formAuth } from '../context/formContext'
 import View from '../modals/View'
