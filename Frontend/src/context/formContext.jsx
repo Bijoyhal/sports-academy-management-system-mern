@@ -210,7 +210,7 @@ export const FormProvider = ({ children }) => {
       });
       console.log(formData);
       const response = await axios.post(
-        "https://sports-academy-management-system-mern.onrender.com/api/form/submit",
+        "https://sports-academy-management-system-mern-1.onrender.com/form/submit",
         formData,
         {
           headers: {
@@ -265,7 +265,7 @@ export const FormProvider = ({ children }) => {
 
   const getForm = async () => {
     try {
-      const res = await axios.get("https://sports-academy-management-system-mern.onrender.com/api/form/getAll");
+      const res = await axios.get("https://sports-academy-management-system-mern-1.onrender.com/form/getAll");
       setGetAll(res.data.data);
     } catch (error) {
       console.log(error);

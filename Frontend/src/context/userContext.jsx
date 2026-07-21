@@ -35,7 +35,7 @@ export const UserProvider = ({ children }) => {
 
         }
         try {
-            const res = await axios.post('https://sports-academy-management-system-mern.onrender.com/user/Register', register);
+            const res = await axios.post('https://sports-academy-management-system-mern-1.onrender.com/user/Register', register);
             setRegister({
                 username: "",
                 email: "",
@@ -75,7 +75,7 @@ export const UserProvider = ({ children }) => {
             return;
         }
         try {
-            const res = await axios.post('https://sports-academy-management-system-mern.onrender.com/user/Login', Login);
+            const res = await axios.post('https://sports-academy-management-system-mern-1.onrender.com/user/Login', Login);
             setLogin({
                 email: "",
                 password: ""
@@ -134,7 +134,7 @@ export const UserProvider = ({ children }) => {
     const submitOtp = async (e) => {
         e.preventDefault()
         try {
-            const res = await axios.post('https://sports-academy-management-system-mern.onrender.com/user/verify-otp', {
+            const res = await axios.post('https://sports-academy-management-system-mern-1.onrender.com/user/verify-otp', {
                 otp: getOtp,
             });
             localStorage.setItem("accessToken", res.data.accessToken)
